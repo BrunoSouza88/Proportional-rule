@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/91ab540396.js" crossorigin="anonymous"></script>
+  <title>Regra de Três</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Regra de Três</h1>
+    <h3>Simples</h3>
+      
+    <div class="inputs-container">
+      <div class="input-container">
+        <label for="valorA">Valor A:</label>
+        <input type="number" id="valorA" onchange="atualizarResultado()">
+      </div>
+
+      <div class="input-container">
+        <label for="valorB">Valor B:</label>
+        <input type="number" id="valorB" onchange="atualizarResultado()">
+      </div>
+    </div>
+
+    <div class="inputs-container">
+      <div class="input-container">
+        <label for="valorC">Valor C:</label>
+        <input type="number" id="valorC" onchange="atualizarResultado()">
+      </div>
+    </div>
+
+    <div class="input-container">
+      <label for="resultado">Resultado:</label>
+      <div id="resultado"></div>
+    </div>
+
+    <div class="buttons-container">
+      <button id="copiarResultado" data-tooltip="Copiar resultado" onclick="copiarResultado()">&#128203;</button>
+      <button id="limparDados" data-tooltip="Limpar dados" onclick="limparDados()">&#10227;</button>
+    </div>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+<footer>
+  
+  <div class="footer-left">
+    <span>Por Bruno Souza</span>
+  </div>
+  <div class="footer-right">
+    <a href="https://www.instagram.com/bmsouza88/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/bruno-m-souza/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/BrunoSouza88" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:bmsouza88@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+</footer>
+</html>
